@@ -23,8 +23,8 @@ resource "docker_container" "target" {
 
   volumes {
     container_path = "/sys/fs/cgroup"
-    host_path       = "/sys/fs/cgroup"
-    read_only       = false
+    host_path      = "/sys/fs/cgroup"
+    read_only      = false
   }
 
   networks_advanced {
