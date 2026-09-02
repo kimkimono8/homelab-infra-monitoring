@@ -1,5 +1,7 @@
 route:
-  receiver: 'default'
+  receiver: 'discord'
 
 receivers:
-  - name: 'default'
+  - name: 'discord'
+    discord_configs:
+      - webhook_url: 'REDACTED'
