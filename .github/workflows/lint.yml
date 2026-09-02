@@ -27,4 +27,5 @@ jobs:
         run: pip install ansible-lint
 
       - name: Run ansible-lint
-        run: ansible-lint ansible/playbooks/site.yml
+        working-directory: ansible
+        run: ansible-lint playbooks/site.yml
